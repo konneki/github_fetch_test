@@ -4,13 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WTF: Webpack starter kit</title>
-    <meta name="description" content="Your project description" />
+    <meta name="description" content="Fetching Konneki's repos" />
     <!-- Title -->
-    <meta property="og:title" content="" />
+    <meta property="og:title" content="github fetch" />
     <!-- OPTIONAL description. 2-4 sentences. -->
-    <meta property="og:description" content="" />
+    <meta property="og:description" content="Fetching Konneki's repos" />
     <!-- full url with http(s) ie. https://maciejkorsan.github.io/my-repo/ -->
-    <meta property="og:url" content="" />
+    <meta
+      property="og:url"
+      content="https://konneki.github.io/github_fetch_test/"
+    />
     <!-- full url to the image with http(s) ie. https://maciejkorsan.github.io/my-repo/assets/img/fb.png. Facebook suggests at least 1200 x 630. -->
     <meta
       property="og:image"
@@ -145,9 +148,31 @@
     />
   </head>
   <body>
-    <div class="hello">
-      <img class="hello__logo" src="../assets/img/logo.svg" alt="WTF " />
-      <span class="hello__circles"></span>
-    </div>
+    <header class="header"><h1 class="header__title">GitHub repos</h1></header>
+    <main class="main">
+      <section class="grid__container">
+        <h2 class="grid__header">Konneki's repos:</h2>
+        <article class="grid-item">
+          <h3 class="grid-item__heading">title</h3>
+          <table class="grid-item__table">
+            <thead>
+              <tr>
+                <th class="grid-item__table-head">link</th>
+                <th class="grid-item__table-head">branches</th>
+                <th class="grid-item__table-head">commits</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="grid-item__table-body">link</td>
+                <td class="grid-item__table-body">branch number</td>
+                <td class="grid-item__table-body">commits number</td>
+              </tr>
+            </tbody>
+          </table>
+        </article>
+      </section>
+    </main>
+    <footer class="footer"></footer>
   </body>
 </html>
