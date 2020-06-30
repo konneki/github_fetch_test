@@ -6,6 +6,7 @@ import '../scss/main.scss';
 // registerSW();
 
 /* place your code below */
+const headerTitle = document.querySelector('.header__title');
 const reposItems = document.querySelector('.grid__container');
 let username = prompt('enter github username');
 const link = fetch(
@@ -16,6 +17,7 @@ if (link) {
   link
     .then((resp) => resp.json())
     .then((resp) => {
+      headerTitle.innerHTML = `${username}'s GitHub repos`;
       resp.forEach((e) => {
         const HTML = `<article class="grid-item">
   <h3 class="grid-item__heading">${e.name}</h3>
